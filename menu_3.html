@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap" rel="stylesheet">
@@ -13,131 +13,170 @@
 </head>
 <body>
     <header>
-        <h1>ohmyfood</h1>
-    </header>
-    <main>
-        <section id="image_background">
-            <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-        </section>
-        <section id="menu">
-            <div>
-                <h1>A la française</h1>
-            </div>
-            <ul >
-                <li>
-                    <p>ENTRÉES</p>
-                    <ul>
-                        <li>
-                            <h2>Tartare de poulpe acidulé</h2>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <p>ENTRÉES</p>
-                    <ul>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <p>ENTRÉES</p>
-                    <ul>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                        <li>
-                            <div>
-                                <p>Tartare de poulpe acidulé</p>
-                            </div>
-                            <p>
-                                <span>Aux zests d'orange</span>
-                                <span>25€</span>
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <button>Commander</button>
-        </section>
-        <footer>
+        <div class="home">
+            <a href="/index.html" class="home_link"><span class="iconify" data-icon="akar-icons:arrow-left" data-width="25" data-height="25"></span></a>
             <h1>ohmyfood</h1>
-            <ul>
-                <li>
-                    <p>Proposer un restaurant</p>
-                </li>
-                <li>
-                    <p>Devenir partenaire</p>
-                </li>
-                <li>
-                    <p>Mentions légales</p>
-                </li>
-                <li>
-                    <p>Contact</p>
-                </li>
-            </ul>
-        </footer>
+        </div>
+    </header>
+    <section id="image_background">
+        <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+    </section>
+    <main id="mainRestaurant">
+        <section id="menu">
+            <div class="menu_header">
+                <h2 class="menu_title">Le délice des sens</h2>
+                <button class="menu_button">
+                    <span class="iconify" data-icon="clarity:heart-solid" data-width="30" data-height="30"></span>
+                </button>
+            </div>
+            <div class="menu_meal">
+                <div class="meal_item">
+                    <p class="meal_title">ENTRÉES</p>
+                    <div class="meal_list">
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Tartare de thon</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Assaisonné au yuzu</span>
+                                    <span class="content_price">25€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Bouchée de homard croustillant</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Et sa farandole de petits légumes</span>
+                                    <span class="content_price">35€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Velouté de cèpes</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Aux truffes</span>
+                                    <span class="content_price">20€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal_item">
+                    <p class="meal_title">PLATS</p>
+                    <div class="meal_list">
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Poulet rôti aux herbes de Provence</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Et sa crème de truffe</span>
+                                    <span class="content_price">40€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Langouste rôtie</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Et ses légumes de saison</span>
+                                    <span class="content_price">35€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Côte de boeuf Angus</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Et sa purée de panais</span>
+                                    <span class="content_price">44€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal_item">
+                    <p class="meal_title">DESSERTS</p>
+                    <div class="meal_list">
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Farandole de desserts</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Du chef</span>
+                                    <span class="content_price">18€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Crème brulée</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">Revisitée</span>
+                                    <span class="content_price">22€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                        <div class="meal_content">
+                            <div class="meal_content_info">
+                                <h3 class="meal_content_title">Tiramisu</h3>
+                                <p class="meal_content_recipe">
+                                    <span class="content_recipe">À la noisette</span>
+                                    <span class="content_price">23€</span>
+                                </p>
+                            </div>  
+                            <div class="meal_check_section">
+                                <span class="iconify checked" data-icon="bi:check-circle-fill" style="color: white;" data-width="20" data-height="20"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_command">
+                <button class="command_button">Commander</button>
+            </div>
+        </section>
     </main>
+    <footer>
+        <h1>ohmyfood</h1>
+        <ul>
+            <li>
+                <span class="iconify" data-icon="mdi:silverware-fork-knife" data-width="20"></span>
+                <p>Proposer un restaurant</p>
+            </li>
+            <li>
+                <span class="iconify" data-icon="fa-solid:hands-helping" data-width="20"></span>
+                <p>Devenir partenaire</p>
+            </li>
+            <li>
+                <p>Mentions légales</p>
+            </li>
+            <li>
+                <p>Contact</p>
+            </li>
+        </ul>
+    </footer>
 </body>
 </html>
