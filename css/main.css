@@ -321,7 +321,7 @@ footer ul li .iconify {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     #menu .menu_meal {
         padding: 0;
     }
