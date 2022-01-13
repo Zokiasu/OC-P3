@@ -119,7 +119,7 @@ footer ul li .iconify {
     padding: 2rem 30rem 0 30rem;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
     #operation {
         padding: 2rem 2rem 0 2rem;
     }
@@ -176,7 +176,7 @@ footer ul li .iconify {
     background-color: #f8f8f8;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
     #restaurant {
         padding: 3rem 1rem 1rem 1rem;
         background-color: #f8f8f8;
@@ -321,7 +321,7 @@ footer ul li .iconify {
     margin: 0;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1440px) {
     #menu .menu_meal {
         padding: 0;
     }
@@ -495,7 +495,7 @@ footer ul li .iconify {
     top: -857px;
 }
 
-.spin-container {
+.spin-container, .spinner {
     animation: spin 2s ease-in-out 5s forwards;
 }
 
@@ -509,7 +509,7 @@ footer ul li .iconify {
     }
     100% {
       opacity: 0;
-      display: none;
       height: 0;
+      z-index: -1;
     }
   }
