@@ -66,6 +66,7 @@ footer ul li a {
     margin: 0.5rem 0 0.5rem 0;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 footer ul li a .iconify {
@@ -109,6 +110,15 @@ footer ul li a .iconify {
     background: linear-gradient(#ff79da, #9356dc);
     margin: 1rem auto 0 auto;
     cursor: pointer;
+}
+
+#context .search .search_button:hover {
+    background: linear-gradient(#fa92dd, #9356dc);
+    transform: scale(1.05);
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    transition-property: background-color, transform, filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
 }
 
 #operation {
@@ -172,9 +182,9 @@ footer ul li a .iconify {
     background-color: #f8f8f8;
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 1280px) {
     #restaurant {
-        padding: 3rem 1rem 1rem 1rem;
+        padding: 5rem;
         background-color: #f8f8f8;
     }
 }
@@ -184,6 +194,16 @@ footer ul li a .iconify {
     margin: 0;
     margin-top: 1rem;
     padding: 0;
+}
+
+@media (min-width: 1280px) {
+    #restaurant ul {
+        /* grid 4 collones */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1rem;
+        
+    }
 }
 
 #restaurant ul li {
@@ -345,14 +365,14 @@ footer ul li a .iconify {
 
 @keyframes slideInFromLeft {
     0% {
-      transform: translateY(50%);
-      opacity: 0;
+        transform: translateY(50%);
+        opacity: 0;
     }
     100% {
-      transform: translateX(0);
-      opacity: 100;
+        transform: translateX(0);
+        opacity: 100;
     }
-  }
+}
 
 #menu .menu_meal .meal_item .meal_list .meal_content {
     animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -396,6 +416,16 @@ footer ul li a .iconify {
     justify-content: space-between;
 }
 
+#menu .menu_meal .meal_item .meal_list .meal_content .meal_content_recipe .content_recipe {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#menu .menu_meal .meal_item .meal_list .meal_content:hover .meal_content_recipe .content_recipe {
+    width: 30vh;
+}
+
 #menu .menu_meal .meal_item .meal_list .meal_content .meal_content_recipe .content_price {
     font-weight: bold;
 }
@@ -415,6 +445,15 @@ footer ul li a .iconify {
     padding: 0.8rem 1.6rem;
     background: linear-gradient(#ff79da, #9356dc);
     cursor: pointer;
+}
+
+#menu .menu_command .command_button:hover {
+    background: linear-gradient(#fa92dd, #9356dc);
+    transform: scale(1.05);
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+    transition-property: background-color, transform, filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
 }
 
 .spin-container {
