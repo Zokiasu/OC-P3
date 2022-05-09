@@ -178,7 +178,7 @@ footer ul li a .iconify {
 }
 
 #restaurant {
-    padding: 3rem 30rem 1rem 30rem;
+    padding: 2rem;
     background-color: #f8f8f8;
 }
 
@@ -196,9 +196,17 @@ footer ul li a .iconify {
     padding: 0;
 }
 
+@media (min-width: 768px) {
+    #restaurant ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        
+    }
+}
+
 @media (min-width: 1280px) {
     #restaurant ul {
-        /* grid 4 collones */
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 1rem;
