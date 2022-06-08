@@ -262,14 +262,16 @@ footer ul li a .iconify {
     margin: 0px;
 }
 
-#restaurant ul li .restaurant_info .iconify {
-    color: black;
+#restaurant ul li .restaurant_info .icon {
+    fill: #fff;
+    stroke: #000;
     cursor: pointer;
     transition: 0.5s;
 }
 
-#restaurant ul li .restaurant_info .iconify:hover {
-    color: #9356dc;
+#restaurant ul li .restaurant_info .icon:hover {
+    fill: #9356dc;
+    stroke: #9356dc;
 }
 
 /** Menu Restaurant **/
@@ -327,15 +329,17 @@ footer ul li a .iconify {
     margin: 0;
 }
 
-#menu .menu_button .iconify {
-    color: black;
+#menu .menu_button .icon {
+    fill: #fff;
+    stroke: #000;
     cursor: pointer;
     transition: 0.5s;
 
 }
 
-#menu .menu_button .iconify:hover {
-    color: #9356dc;
+#menu .menu_button .icon:hover {
+    fill: #9356dc;
+    stroke: #9356dc;
 }
 
 #menu .menu_meal {
